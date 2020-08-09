@@ -15,5 +15,5 @@ make clean
  make all
 
 # upload the code to stm32f103 (requires root privileges)
- make fllash
+ make flash
 
