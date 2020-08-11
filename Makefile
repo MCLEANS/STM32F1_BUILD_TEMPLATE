@@ -22,7 +22,7 @@ ST_FLASH = st-flash
 
 # specify compiler flags
 CFLAGS  = -g -O2 -Wall
-CFLAGS += -T  stm32_flash.ld
+CFLAGS += -T  stm32_flash.ld --spec=nosys.specs
 CFLAGS += -mlittle-endian -mthumb -mcpu=cortex-m3 -mthumb-interwork
 CFLAGS += -mfloat-abi=soft -mfpu=fpv4-sp-d16
 CFLAGS += -DSTM32F10X_MD 
